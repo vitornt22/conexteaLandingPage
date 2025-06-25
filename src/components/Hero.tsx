@@ -28,14 +28,29 @@ export default function Hero() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="group bg-[#2E8FE6] hover:bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold flex items-center justify-center space-x-3 transition-all duration-200 shadow-lg hover:shadow-xl">
-                <Download className="h-5 w-5 group-hover:scale-110 transition-transform" />
-                <span>Baixar APK do App</span>
+              <button
+                onClick={() =>
+                  window.open(
+                    "https://drive.google.com/file/d/1ayy4xMAiF_hOcVTlFwHA5DTURssXKjUC/view?usp=sharing",
+                    "_blank",
+                    "noopener,noreferrer"
+                  )
+                }
+                className="group w-full bg-[#2E8FE6] hover:bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold flex items-center justify-center space-x-3 transition-all duration-200 shadow-lg hover:shadow-xl"
+              >
+                <Download className="h-6 w-6 group-hover:scale-110 transition-transform" />
+                <span>Clique aqui para baixar o APK</span>
               </button>
-              <button className="group border-2 border-[#2E8FE6] text-[#2E8FE6] hover:bg-[#2E8FE6] hover:text-white px-8 py-4 rounded-xl font-semibold flex items-center justify-center space-x-3 transition-all duration-200">
-                <FileText className="h-5 w-5 group-hover:scale-110 transition-transform" />
-                <span>Plano de Negócios</span>
-              </button>
+              <a
+                href="https://storage2.me-qr.com/pdf/1bf0c204-8aba-45dd-b66e-4dfde9f771df.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="group border-2 border-[#2E8FE6] text-[#2E8FE6] hover:bg-[#2E8FE6] hover:text-white px-8 py-4 rounded-xl font-semibold flex items-center justify-center space-x-3 transition-all duration-200">
+                  <FileText className="h-5 w-5 group-hover:scale-110 transition-transform" />
+                  <span>Plano de Negócios</span>
+                </button>
+              </a>
             </div>
 
             <div className="flex items-center space-x-6 text-sm text-slate-500">

@@ -41,7 +41,7 @@ export default function Contact() {
               <Mail className="h-5 w-5 text-blue-600" />
               <span className="text-blue-900 font-medium">Email</span>
             </div>
-            <p className="text-blue-800 text-sm">contato@conexstea.com.br</p>
+            <p className="text-blue-800 text-sm">connextea@gmail.com</p>
           </div>
 
           <div className="bg-white rounded-lg p-6 text-center shadow-md">
@@ -49,7 +49,7 @@ export default function Contact() {
               <Phone className="h-5 w-5 text-blue-600" />
               <span className="text-blue-900 font-medium">WhatsApp</span>
             </div>
-            <p className="text-blue-800 text-sm">(11) 99999-9999</p>
+            <p className="text-blue-800 text-sm">(89) 99973-1687</p>
           </div>
         </div>
       </div>

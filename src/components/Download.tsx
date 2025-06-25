@@ -28,14 +28,22 @@ export default function DownloadSection() {
                   <p className="text-slate-600 leading-relaxed">
                     O aplicativo ConexTEA está disponível em formato APK para
                     Android. Faça o download e instale diretamente em seu
-                    dispositivo para experimentar todas as funcionalidades.
+                    dispositivo para experimentar todas as funcionalidades. Esta
+                    versão apresenta as telas em funcionamento com dados
+                    simulados, permitindo visualizar e testar os principais
+                    recursos e a experiência de uso do app.
                   </p>
                 </div>
 
-                <button className="group w-full bg-[#2E8FE6] hover:bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold flex items-center justify-center space-x-3 transition-all duration-200 shadow-lg hover:shadow-xl">
+                <a
+                  href="https://drive.google.com/file/d/1ayy4xMAiF_hOcVTlFwHA5DTURssXKjUC/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group w-full bg-[#2E8FE6] hover:bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold flex items-center justify-center space-x-3 transition-all duration-200 shadow-lg hover:shadow-xl"
+                >
                   <Download className="h-6 w-6 group-hover:scale-110 transition-transform" />
                   <span>Clique aqui para baixar o APK</span>
-                </button>
+                </a>
 
                 <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
                   <div className="flex items-start space-x-3">

@@ -9,6 +9,7 @@ export default function Documentation() {
         "Documento completo com estratégia, modelo de negócio e projeções financeiras.",
       type: "PDF",
       color: "bg-red-100 text-red-600",
+      url: "https://storage2.me-qr.com/pdf/1bf0c204-8aba-45dd-b66e-4dfde9f771df.pdf",
     },
     {
       icon: Code,
@@ -17,14 +18,7 @@ export default function Documentation() {
         "Especificações técnicas, arquitetura do sistema e guia de desenvolvimento.",
       type: "DOC",
       color: "bg-blue-100 text-blue-600",
-    },
-    {
-      icon: Map,
-      title: "Roadmap e Tecnologias",
-      description:
-        "Cronograma de desenvolvimento, tecnologias utilizadas (React Native, Firebase).",
-      type: "WEB",
-      color: "bg-green-100 text-green-600",
+      url: "https://storage2.me-qr.com/pdf/7291b055-76d9-4306-9aaa-5c3015e80de6.pdf?time=1750824295", // coloque o URL real aqui
     },
   ];
 
@@ -66,10 +60,15 @@ export default function Documentation() {
                   {doc.description}
                 </p>
 
-                <button className="group/btn w-full bg-[#2E8FE6] hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium flex items-center justify-center space-x-2 transition-colors duration-200">
+                <a
+                  href={doc.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group/btn w-full bg-[#2E8FE6] hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium flex items-center justify-center space-x-2 transition-colors duration-200"
+                >
                   <span>Acessar Documento</span>
                   <ExternalLink className="h-4 w-4 group-hover/btn:scale-110 transition-transform" />
-                </button>
+                </a>
               </div>
             </div>
           ))}
@@ -85,7 +84,6 @@ export default function Documentation() {
                 "React Native",
                 "React",
                 "Next.JS",
-
                 "Python",
                 "Django Rest Framework",
               ].map((tech, index) => (
